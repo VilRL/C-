@@ -1,0 +1,14 @@
+D:\C#\ScreenGame\ScreenGame\ScreenGame\bin\Debug\net8.0\ScreenGame.exe
+D:\C#\ScreenGame\ScreenGame\ScreenGame\bin\Debug\net8.0\ScreenGame.deps.json
+D:\C#\ScreenGame\ScreenGame\ScreenGame\bin\Debug\net8.0\ScreenGame.runtimeconfig.json
+D:\C#\ScreenGame\ScreenGame\ScreenGame\bin\Debug\net8.0\ScreenGame.dll
+D:\C#\ScreenGame\ScreenGame\ScreenGame\bin\Debug\net8.0\ScreenGame.pdb
+D:\C#\ScreenGame\ScreenGame\ScreenGame\obj\Debug\net8.0\ScreenGame.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\ScreenGame\ScreenGame\ScreenGame\obj\Debug\net8.0\ScreenGame.AssemblyInfoInputs.cache
+D:\C#\ScreenGame\ScreenGame\ScreenGame\obj\Debug\net8.0\ScreenGame.AssemblyInfo.cs
+D:\C#\ScreenGame\ScreenGame\ScreenGame\obj\Debug\net8.0\ScreenGame.csproj.CoreCompileInputs.cache
+D:\C#\ScreenGame\ScreenGame\ScreenGame\obj\Debug\net8.0\ScreenGame.dll
+D:\C#\ScreenGame\ScreenGame\ScreenGame\obj\Debug\net8.0\refint\ScreenGame.dll
+D:\C#\ScreenGame\ScreenGame\ScreenGame\obj\Debug\net8.0\ScreenGame.pdb
+D:\C#\ScreenGame\ScreenGame\ScreenGame\obj\Debug\net8.0\ScreenGame.genruntimeconfig.cache
+D:\C#\ScreenGame\ScreenGame\ScreenGame\obj\Debug\net8.0\ref\ScreenGame.dll
