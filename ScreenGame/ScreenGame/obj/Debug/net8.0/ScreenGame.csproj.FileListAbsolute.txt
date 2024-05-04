@@ -12,3 +12,4 @@ D:\C#\ScreenGame\ScreenGame\ScreenGame\obj\Debug\net8.0\refint\ScreenGame.dll
 D:\C#\ScreenGame\ScreenGame\ScreenGame\obj\Debug\net8.0\ScreenGame.pdb
 D:\C#\ScreenGame\ScreenGame\ScreenGame\obj\Debug\net8.0\ScreenGame.genruntimeconfig.cache
 D:\C#\ScreenGame\ScreenGame\ScreenGame\obj\Debug\net8.0\ref\ScreenGame.dll
+D:\C#\ScreenGame\ScreenGame\ScreenGame\obj\Debug\net8.0\ScreenGame.sourcelink.json
