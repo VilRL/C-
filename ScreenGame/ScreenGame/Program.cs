@@ -28,7 +28,7 @@ void ExibirOpções()
                 cadastrarJogo();
                 break;
             case 2:
-                Console.WriteLine("2");
+                exibirJogos();
                 break;
             case 3:
                 Console.WriteLine("3");
@@ -67,6 +67,14 @@ void cadastrarJogo()
 
 void exibirJogos() 
 {
+    exibirTitulo("EXIBIR TODOS OS JOGOS\n");
+    foreach (string jogo in colecaoDeJogos.Keys) 
+    {
+        Console.WriteLine(jogo);
+    }
+    Console.Write("\nDigite qualquer tecla para sair");
+    Console.ReadKey();
+    ExibirOpções();
 
 }
 
