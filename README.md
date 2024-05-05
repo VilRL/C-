@@ -11,15 +11,15 @@
   <ul><a href="#CollectionGame">Collection Game</a>
     <details>
       <summary>Detalhes</summary>
-      <ul>◻️ <a href="#prévia-da-solução">Prévia da Solução</a></ul>
-      <ul>◻️ <a href="#Principais-comandos">Principais Comandos</a></ul>
-      <ul>◻️ <a href="#função">Funções</a>
-      <ul>◻️ <a href="#Exibir-Menu">Exibir Menu</a></ul>
-      <ul>◻️ <a href="#Exibir-Titulo">Exibir Titulo</a></ul>
-      <ul>◻️ <a href="#Cadastrar-Jogo">Cadastrar Jogo</a></ul>
-      <ul>◻️ <a href="#Exibir-Jogos">Exibir Jogos</a></ul>
-      <ul>◻️ <a href="#Avaliar-Jogo">Avaliar Jogo</a></ul>
-      <ul>◻️ <a href="#Exibir-Nota-Média">Exibir Nota Média</a></ul>
+      <ul>◻️ Prévia da Solução</ul>
+      <ul>◻️ Principais Comandos</ul>
+      <ul>◻️ Funções
+      <ul>◻️ Exibir Menu</ul>
+      <ul>◻️ Exibir Titulo</ul>
+      <ul>◻️ Cadastrar Jogo</ul>
+      <ul>◻️ Exibir Jogos</ul>
+      <ul>◻️ Avaliar Jogo</ul>
+      <ul>◻️ Exibir Nota Média</ul>
       </ul>
     </details>
   </ul>
