@@ -1,3 +1,4 @@
+<h6> Don't Speak Portuguese? <a href="https://github.com/VilRL/C-Sharp-Primeiro-Programa/blob/main/README-EN.md">Click Here</a> To View This Page in English.</h6>
 <h1>🚀Sistema Coleção de Jogos em C#</h1>
 
 <p align="justify">Este projeto tem como objetivo fornecer uma aplicação simples em C# para gerenciamento de uma coleção de jogos, desenvolvida como parte do curso "Criando seu Primeiro Programa" da Alura. Ele foi concebido para auxiliar no aprendizado e prática dos conceitos fundamentais de lógica de programação, proporcionando uma experiência prática na construção de um programa funcional.</p>
