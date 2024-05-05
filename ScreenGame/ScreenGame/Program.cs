@@ -18,23 +18,23 @@ void ExibirOpções()
     Console.WriteLine("Digite 0 Para Sair\n");
 
     Console.Write("Digite uma opção: ");
-    int opcaoDigitada = int.Parse(Console.ReadLine());
+    int opcaoDigitada = int.Parse(Console.ReadLine()!);
 
-    if (opcaoDigitada < 4)
+    if (opcaoDigitada < 5)
     {
         switch (opcaoDigitada)
         {
             case 1:
-                cadastrarJogo();
+                CadastrarJogo();
                 break;
             case 2:
-                exibirJogos();
+                ExibirJogos();
                 break;
             case 3:
-                Console.WriteLine("3");
+                AvaliarJogo();
                 break;
             case 4:
-                Console.WriteLine("4");
+                ExibirNotaMediaJogo();
                 break;
         }
     }else{
@@ -44,7 +44,7 @@ void ExibirOpções()
 
 }
 
-void exibirTitulo(string titulo) 
+void ExibirTitulo(string titulo) 
 {
     Console.Clear();
     int quantidadeDeLetras = titulo.Length;
@@ -54,38 +54,123 @@ void exibirTitulo(string titulo)
     Console.WriteLine($"{asteriscos}\n");
 }
 
-void cadastrarJogo() 
+void CadastrarJogo() 
 {
-    exibirTitulo("CADASTRAR JOGO");
+    ExibirTitulo("CADASTRAR JOGO");
     Console.Write("Digite o nome do jogo: ");
-    string jogoDigitado = Console.ReadLine();
-    colecaoDeJogos.Add(jogoDigitado, new List<int>());
-    Console.WriteLine($"\nO jogo {jogoDigitado} foi cadastrado com sucesso!!!");
-    Thread.Sleep(3000);
-    ExibirOpções();
-}
-
-void exibirJogos() 
-{
-    exibirTitulo("EXIBIR TODOS OS JOGOS\n");
-    foreach (string jogo in colecaoDeJogos.Keys) 
+    string jogoDigitado = Console.ReadLine()!;
+    if (jogoDigitado == "")
     {
-        Console.WriteLine(jogo);
+        Console.WriteLine("\nNão é possível cadastro o jogo em branco!");
+        Thread.Sleep(3000);
+        Console.Clear();
+        CadastrarJogo();
     }
-    Console.Write("\nDigite qualquer tecla para sair");
-    Console.ReadKey();
-    ExibirOpções();
-
+    else {
+        colecaoDeJogos.Add(jogoDigitado, new List<int>());
+        Console.WriteLine($"\nO jogo {jogoDigitado} foi cadastrado com sucesso!!!");
+        Thread.Sleep(3000);
+        ExibirOpções();
+    }
 }
 
-void avaliarJogo() 
-{ 
-
-}
-
-void exibirNotaMediaJogo()
+void ExibirJogos()
 {
+    ExibirTitulo("EXIBIR TODOS OS JOGOS\n");
 
+    if (colecaoDeJogos.Keys.Count == 0)
+    {
+        Console.WriteLine("Nenhum jogo cadastrado!");
+        Console.Write("\nDigite qualquer tecla para voltar ao menu principal");
+        Console.ReadKey();
+        ExibirOpções();
+    }
+    else {
+        foreach (string jogo in colecaoDeJogos.Keys)
+        {
+            Console.WriteLine(jogo);
+        }
+        Console.Write("\nDigite qualquer tecla para voltar ao menu principal");
+        Console.ReadKey();
+        ExibirOpções();
+    } 
+}
+
+void AvaliarJogo() 
+{
+    ExibirTitulo("ATRIBUA UMA NOTA AO JOGO");
+    if (colecaoDeJogos.Keys.Count == 0)
+    {
+        Console.WriteLine("Nenhum jogo cadastrado para atribuir nota!");
+        Console.Write("\nDigite qualquer tecla para voltar ao menu principal");
+        Console.ReadKey();
+        ExibirOpções();
+    }
+    else
+    {
+
+        foreach (string jogo in colecaoDeJogos.Keys)
+        {
+            Console.WriteLine(jogo);
+        }
+
+        Console.Write("\nQual o jogo que deseja avaliar: ");
+        string jogoDigitado = Console.ReadLine()!;
+
+        if (colecaoDeJogos.ContainsKey(jogoDigitado))
+        {
+            Console.Write($"\nDigite a nota que deseja atribuir ao jogo {jogoDigitado}: ");
+            int notaDigitada = int.Parse(Console.ReadLine()!);
+            colecaoDeJogos[jogoDigitado].Add(notaDigitada);
+            Console.WriteLine($"\nA nota {notaDigitada} foi registrada com sucesso!");
+            Thread.Sleep(3000);
+            ExibirOpções();
+
+        }
+        else
+        {
+            Console.WriteLine($"O jogo {jogoDigitado} não foi encontrado em sua coleção!");
+            Console.Write("\nDigite qualquer tecla para voltar ao menu principal");
+            Console.ReadKey();
+            ExibirOpções();
+        }
+    }
+}
+
+void ExibirNotaMediaJogo()
+{
+    ExibirTitulo("NOTA MÉDIA DO JOGO");
+    if (colecaoDeJogos.Keys.Count == 0)
+    {
+        Console.WriteLine("Nenhum jogo cadastrado para exibir nota média!");
+        Console.Write("\nDigite qualquer tecla para voltar ao menu principal");
+        Console.ReadKey();
+        ExibirOpções();
+    }
+    else {
+
+        foreach (string jogo in colecaoDeJogos.Keys)
+        {
+            Console.WriteLine(jogo);
+        }
+        Console.Write("\nDigite o nome do jogo que deseja exibir a média: ");
+        string jogoDigitado = Console.ReadLine()!;
+
+        if (colecaoDeJogos.ContainsKey(jogoDigitado)) {
+            List<int> notasDoJogo = colecaoDeJogos[jogoDigitado];
+            Console.WriteLine($"\n A média do jogo {jogoDigitado} é {notasDoJogo.Average()}");
+            Console.Write("\nDigite qualquer tecla para voltar ao menu principal");
+            Console.ReadKey();
+            ExibirOpções();
+        }
+        else
+        {
+            Console.WriteLine($"O jogo {jogoDigitado} não foi encontrado!");
+            Console.Write("\nDigite qualquer tecla para voltar ao menu principal");
+            Console.ReadKey();
+            ExibirOpções();
+        }
+    }
 }
 
 ExibirOpções();
